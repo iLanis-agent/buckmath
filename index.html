@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buck Math - buck converter arithmetic</title>
+<style>
+  :root { --accent:#6a3a5d; --ink:#2b1a26; --paper:#f8f4f7; --soft:#eee2ec; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#7d5d74; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Buck Math</h1>
+  <p class="lede">Stepping 12 V down to 5 V at 100 kHz asks for a 41.67 % duty cycle.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Buck Math works out duty cycles, on-times, inductor ripple and inductor values for an ideal step-down stage from the numbers you type. It assumes an ideal, always-continuous stage, so it has not seen your converter and does not know the switch or diode drops, the winding resistance, the control mode or the part variant, and it gives no verdict that a converter design is adequate or safe. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: the duty a 12-to-5 V stage asks for, what a 10 µH inductor lets the current swing, and the inductor that holds the swing to 3000 mA.</p>
+  <section>
+    <h2>The duty truth</h2>
+    <p>Stepping 12 V down to 5 V at 100 kHz asks for a 41.67 % duty cycle, a 4.17 µs on-time per cycle.</p>
+  </section>
+  <section>
+    <h2>The ripple truth</h2>
+    <p>With a 10 µH inductor at 100 kHz, the current swings 2916.67 mA peak to peak as the switch cycles.</p>
+  </section>
+  <section>
+    <h2>The inductor truth</h2>
+    <p>To hold the swing to 3000 mA at 100 kHz stepping 12 V down to 5 V, the inductor comes to 9.72 µH.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Buck Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buck Math - app</title>
+<style>
+  :root { --accent:#6a3a5d; --ink:#2b1a26; --paper:#f8f4f7; --soft:#eee2ec; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #cbb0c6; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #cbb0c6; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#7d5d74; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Buck Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page works out duty cycles, on-times, inductor ripple and inductor values for an ideal step-down stage from the numbers you type: the output over the input for the duty, the volt-seconds over the inductor and frequency for the ripple, and the ripple target back into an inductor value. The voltages, frequencies, inductors and currents are yours to measure or read off your own design and datasheet. It assumes an ideal, always-continuous stage, so it has not seen your converter and does not know the switch or diode drops, the winding resistance, the control mode or the part variant, and it gives no verdict that a converter design is adequate or safe. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The duty truth</h2>
+    <p class="note">The fraction of each cycle the switch stays on: the output over the input, and the on-time at your frequency.</p>
+    <div class="row3">
+      <div><label for="d-vi">Input (V)</label><input id="d-vi" type="text" value="12"></div>
+      <div><label for="d-vo">Output (V)</label><input id="d-vo" type="text" value="5"></div>
+      <div><label for="d-f">Frequency (kHz)</label><input id="d-f" type="text" value="100"></div>
+    </div>
+    <div class="out" id="d-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The ripple truth</h2>
+    <p class="note">How far the inductor current swings: the volt-seconds across the inductor spread over each cycle.</p>
+    <div class="row2">
+      <div><label for="r-vi">Input (V)</label><input id="r-vi" type="text" value="12"></div>
+      <div><label for="r-vo">Output (V)</label><input id="r-vo" type="text" value="5"></div>
+    </div>
+    <div class="row2">
+      <div><label for="r-l">Inductor (µH)</label><input id="r-l" type="text" value="10"></div>
+      <div><label for="r-f">Frequency (kHz)</label><input id="r-f" type="text" value="100"></div>
+    </div>
+    <div class="out" id="r-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The inductor truth</h2>
+    <p class="note">The inductor that holds the ripple you picked: the volt-seconds over the ripple times the frequency.</p>
+    <div class="row2">
+      <div><label for="l-vi">Input (V)</label><input id="l-vi" type="text" value="12"></div>
+      <div><label for="l-vo">Output (V)</label><input id="l-vo" type="text" value="5"></div>
+    </div>
+    <div class="row2">
+      <div><label for="l-i">Ripple (mA)</label><input id="l-i" type="text" value="3000"></div>
+      <div><label for="l-f">Frequency (kHz)</label><input id="l-f" type="text" value="100"></div>
+    </div>
+    <div class="out" id="l-out"></div>
+  </div>
+
+  <footer>Buck Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("d-out", () => dutyTruth(v("d-vi"), v("d-vo"), v("d-f")));
+    show("r-out", () => rippleTruth(v("r-vi"), v("r-vo"), v("r-l"), v("r-f")));
+    show("l-out", () => inductorTruth(v("l-vi"), v("l-vo"), v("l-i"), v("l-f")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>

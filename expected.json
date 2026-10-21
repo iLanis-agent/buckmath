@@ -1,0 +1,1008 @@
+{
+ "cases": [
+  {
+   "fn": "duty",
+   "args": [
+    "12",
+    "5",
+    "100"
+   ],
+   "expect": "Stepping 12 V down to 5 V at 100 kHz asks for a 41.67 % duty cycle, a 4.17 µs on-time per cycle."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "12",
+    "5",
+    "10",
+    "100"
+   ],
+   "expect": "With a 10 µH inductor at 100 kHz, the current swings 2916.67 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "12",
+    "5",
+    "3000",
+    "100"
+   ],
+   "expect": "To hold the swing to 3000 mA at 100 kHz stepping 12 V down to 5 V, the inductor comes to 9.72 µH."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "55.83",
+    "21.46",
+    "9725.05"
+   ],
+   "expect": "Stepping 55.83 V down to 21.46 V at 9725.05 kHz asks for a 38.44 % duty cycle, a 0.04 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "57.98",
+    "45.02",
+    "6809.92"
+   ],
+   "expect": "Stepping 57.98 V down to 45.02 V at 6809.92 kHz asks for a 77.65 % duty cycle, a 0.11 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "29.12",
+    "2.5",
+    "5328.89"
+   ],
+   "expect": "Stepping 29.12 V down to 2.5 V at 5328.89 kHz asks for a 8.59 % duty cycle, a 0.02 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "58.74",
+    "8.33",
+    "7082.51"
+   ],
+   "expect": "Stepping 58.74 V down to 8.33 V at 7082.51 kHz asks for a 14.18 % duty cycle, a 0.02 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "4.67",
+    "0.95",
+    "1024.87"
+   ],
+   "expect": "Stepping 4.67 V down to 0.95 V at 1024.87 kHz asks for a 20.34 % duty cycle, a 0.2 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "85.16",
+    "80.79",
+    "7614.83"
+   ],
+   "expect": "Stepping 85.16 V down to 80.79 V at 7614.83 kHz asks for a 94.87 % duty cycle, a 0.12 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "77.14",
+    "53.6",
+    "3487.7"
+   ],
+   "expect": "Stepping 77.14 V down to 53.6 V at 3487.7 kHz asks for a 69.48 % duty cycle, a 0.2 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "75.58",
+    "27.46",
+    "8022.71"
+   ],
+   "expect": "Stepping 75.58 V down to 27.46 V at 8022.71 kHz asks for a 36.33 % duty cycle, a 0.05 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "18.83",
+    "5.73",
+    "3518.33"
+   ],
+   "expect": "Stepping 18.83 V down to 5.73 V at 3518.33 kHz asks for a 30.43 % duty cycle, a 0.09 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "49.67",
+    "47.74",
+    "2838.48"
+   ],
+   "expect": "Stepping 49.67 V down to 47.74 V at 2838.48 kHz asks for a 96.11 % duty cycle, a 0.34 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "47.4",
+    "32.96",
+    "1397.2"
+   ],
+   "expect": "Stepping 47.4 V down to 32.96 V at 1397.2 kHz asks for a 69.54 % duty cycle, a 0.5 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "56.43",
+    "55.9",
+    "3975.35"
+   ],
+   "expect": "Stepping 56.43 V down to 55.9 V at 3975.35 kHz asks for a 99.06 % duty cycle, a 0.25 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "90.27",
+    "71.59",
+    "9829.04"
+   ],
+   "expect": "Stepping 90.27 V down to 71.59 V at 9829.04 kHz asks for a 79.31 % duty cycle, a 0.08 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "98.67",
+    "70.1",
+    "452.31"
+   ],
+   "expect": "Stepping 98.67 V down to 70.1 V at 452.31 kHz asks for a 71.04 % duty cycle, a 1.57 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "0.99",
+    "0.43",
+    "8937.78"
+   ],
+   "expect": "Stepping 0.99 V down to 0.43 V at 8937.78 kHz asks for a 43.43 % duty cycle, a 0.05 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "99.61",
+    "88.55",
+    "5820.78"
+   ],
+   "expect": "Stepping 99.61 V down to 88.55 V at 5820.78 kHz asks for a 88.9 % duty cycle, a 0.15 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "19.98",
+    "0.03",
+    "8800.76"
+   ],
+   "expect": "Stepping 19.98 V down to 0.03 V at 8800.76 kHz asks for a 0.15 % duty cycle, a 0 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "26.58",
+    "22.64",
+    "1374.41"
+   ],
+   "expect": "Stepping 26.58 V down to 22.64 V at 1374.41 kHz asks for a 85.18 % duty cycle, a 0.62 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "50.05",
+    "20.93",
+    "5866.11"
+   ],
+   "expect": "Stepping 50.05 V down to 20.93 V at 5866.11 kHz asks for a 41.82 % duty cycle, a 0.07 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "67.77",
+    "43.55",
+    "4557.39"
+   ],
+   "expect": "Stepping 67.77 V down to 43.55 V at 4557.39 kHz asks for a 64.26 % duty cycle, a 0.14 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "65.6",
+    "13.21",
+    "6505.35"
+   ],
+   "expect": "Stepping 65.6 V down to 13.21 V at 6505.35 kHz asks for a 20.14 % duty cycle, a 0.03 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "73.81",
+    "27.44",
+    "9758.15"
+   ],
+   "expect": "Stepping 73.81 V down to 27.44 V at 9758.15 kHz asks for a 37.18 % duty cycle, a 0.04 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "1.93",
+    "1.2",
+    "9405.25"
+   ],
+   "expect": "Stepping 1.93 V down to 1.2 V at 9405.25 kHz asks for a 62.18 % duty cycle, a 0.07 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "55.04",
+    "20.79",
+    "742.19"
+   ],
+   "expect": "Stepping 55.04 V down to 20.79 V at 742.19 kHz asks for a 37.77 % duty cycle, a 0.51 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "84.66",
+    "73.03",
+    "306.86"
+   ],
+   "expect": "Stepping 84.66 V down to 73.03 V at 306.86 kHz asks for a 86.26 % duty cycle, a 2.81 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "30.56",
+    "0.2",
+    "4252.57"
+   ],
+   "expect": "Stepping 30.56 V down to 0.2 V at 4252.57 kHz asks for a 0.65 % duty cycle, a 0 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "48.22",
+    "25.28",
+    "234.94"
+   ],
+   "expect": "Stepping 48.22 V down to 25.28 V at 234.94 kHz asks for a 52.43 % duty cycle, a 2.23 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "95.43",
+    "1.27",
+    "9883.35"
+   ],
+   "expect": "Stepping 95.43 V down to 1.27 V at 9883.35 kHz asks for a 1.33 % duty cycle, a 0 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "64.67",
+    "12.17",
+    "4577.64"
+   ],
+   "expect": "Stepping 64.67 V down to 12.17 V at 4577.64 kHz asks for a 18.82 % duty cycle, a 0.04 µs on-time per cycle."
+  },
+  {
+   "fn": "duty",
+   "args": [
+    "58.31",
+    "24.47",
+    "7989.69"
+   ],
+   "expect": "Stepping 58.31 V down to 24.47 V at 7989.69 kHz asks for a 41.97 % duty cycle, a 0.05 µs on-time per cycle."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "78.34",
+    "61.44",
+    "3117.46",
+    "9586.23"
+   ],
+   "expect": "With a 3117.46 µH inductor at 9586.23 kHz, the current swings 0.44 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "80.24",
+    "64.77",
+    "73454.94",
+    "1491.47"
+   ],
+   "expect": "With a 73454.94 µH inductor at 1491.47 kHz, the current swings 0.11 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "5.99",
+    "2.96",
+    "88293.07",
+    "2250.3"
+   ],
+   "expect": "With a 88293.07 µH inductor at 2250.3 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "40.58",
+    "23.51",
+    "4091.65",
+    "9862.11"
+   ],
+   "expect": "With a 4091.65 µH inductor at 9862.11 kHz, the current swings 0.25 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "77.21",
+    "34.5",
+    "34342.62",
+    "9868.62"
+   ],
+   "expect": "With a 34342.62 µH inductor at 9868.62 kHz, the current swings 0.06 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "29.39",
+    "10.54",
+    "1448.33",
+    "9870.28"
+   ],
+   "expect": "With a 1448.33 µH inductor at 9870.28 kHz, the current swings 0.47 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "48.73",
+    "23.99",
+    "8742.41",
+    "370.95"
+   ],
+   "expect": "With a 8742.41 µH inductor at 370.95 kHz, the current swings 3.76 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "79.58",
+    "45.72",
+    "39115.65",
+    "9639.18"
+   ],
+   "expect": "With a 39115.65 µH inductor at 9639.18 kHz, the current swings 0.05 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "75.83",
+    "63.33",
+    "44979.04",
+    "180"
+   ],
+   "expect": "With a 44979.04 µH inductor at 180 kHz, the current swings 1.29 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "28.55",
+    "27.23",
+    "25997.91",
+    "4483.2"
+   ],
+   "expect": "With a 25997.91 µH inductor at 4483.2 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "40.99",
+    "9.02",
+    "46701.91",
+    "8196.4"
+   ],
+   "expect": "With a 46701.91 µH inductor at 8196.4 kHz, the current swings 0.02 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "11.32",
+    "4.91",
+    "48244.11",
+    "8590.64"
+   ],
+   "expect": "With a 48244.11 µH inductor at 8590.64 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "55.89",
+    "6.99",
+    "78119.3",
+    "3233.45"
+   ],
+   "expect": "With a 78119.3 µH inductor at 3233.45 kHz, the current swings 0.02 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "54.95",
+    "24.41",
+    "70507.89",
+    "6547.38"
+   ],
+   "expect": "With a 70507.89 µH inductor at 6547.38 kHz, the current swings 0.03 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "2.74",
+    "2.25",
+    "82387.78",
+    "8351.32"
+   ],
+   "expect": "With a 82387.78 µH inductor at 8351.32 kHz, the current swings 0 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "21.46",
+    "13.41",
+    "57934.81",
+    "989.02"
+   ],
+   "expect": "With a 57934.81 µH inductor at 989.02 kHz, the current swings 0.09 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "70.29",
+    "16.48",
+    "43282.59",
+    "3620.79"
+   ],
+   "expect": "With a 43282.59 µH inductor at 3620.79 kHz, the current swings 0.08 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "47.59",
+    "37.77",
+    "24532.85",
+    "1014.07"
+   ],
+   "expect": "With a 24532.85 µH inductor at 1014.07 kHz, the current swings 0.31 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "45.83",
+    "20.51",
+    "29037.83",
+    "8319.35"
+   ],
+   "expect": "With a 29037.83 µH inductor at 8319.35 kHz, the current swings 0.05 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "8.97",
+    "8.82",
+    "46858.16",
+    "5931.42"
+   ],
+   "expect": "With a 46858.16 µH inductor at 5931.42 kHz, the current swings 0 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "24.21",
+    "21.66",
+    "2662.64",
+    "4002.53"
+   ],
+   "expect": "With a 2662.64 µH inductor at 4002.53 kHz, the current swings 0.21 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "43.37",
+    "42.25",
+    "61127.89",
+    "4363.03"
+   ],
+   "expect": "With a 61127.89 µH inductor at 4363.03 kHz, the current swings 0 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "54.91",
+    "17.4",
+    "99799.07",
+    "8708.7"
+   ],
+   "expect": "With a 99799.07 µH inductor at 8708.7 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "16.9",
+    "11.89",
+    "9760.59",
+    "8438.4"
+   ],
+   "expect": "With a 9760.59 µH inductor at 8438.4 kHz, the current swings 0.04 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "30.27",
+    "18.5",
+    "66867.37",
+    "607.93"
+   ],
+   "expect": "With a 66867.37 µH inductor at 607.93 kHz, the current swings 0.18 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "51.01",
+    "37.64",
+    "33228.31",
+    "8075.46"
+   ],
+   "expect": "With a 33228.31 µH inductor at 8075.46 kHz, the current swings 0.04 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "3.58",
+    "1.71",
+    "60550.58",
+    "222.27"
+   ],
+   "expect": "With a 60550.58 µH inductor at 222.27 kHz, the current swings 0.07 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "7.77",
+    "5.34",
+    "15022.38",
+    "9837.66"
+   ],
+   "expect": "With a 15022.38 µH inductor at 9837.66 kHz, the current swings 0.01 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "99.06",
+    "49.47",
+    "1238.04",
+    "2136.07"
+   ],
+   "expect": "With a 1238.04 µH inductor at 2136.07 kHz, the current swings 9.36 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "ripple",
+   "args": [
+    "42.7",
+    "5.95",
+    "17877.29",
+    "9289.25"
+   ],
+   "expect": "With a 17877.29 µH inductor at 9289.25 kHz, the current swings 0.03 mA peak to peak as the switch cycles."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "39.42",
+    "10.5",
+    "628424.92",
+    "8314.25"
+   ],
+   "expect": "To hold the swing to 628424.92 mA at 8314.25 kHz stepping 39.42 V down to 10.5 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "55.42",
+    "16.68",
+    "665293.06",
+    "7836.09"
+   ],
+   "expect": "To hold the swing to 665293.06 mA at 7836.09 kHz stepping 55.42 V down to 16.68 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "86.86",
+    "56.19",
+    "619163.69",
+    "26.07"
+   ],
+   "expect": "To hold the swing to 619163.69 mA at 26.07 kHz stepping 86.86 V down to 56.19 V, the inductor comes to 1.23 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "58.61",
+    "1.26",
+    "478207.64",
+    "9930.69"
+   ],
+   "expect": "To hold the swing to 478207.64 mA at 9930.69 kHz stepping 58.61 V down to 1.26 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "81.71",
+    "37.25",
+    "288544.98",
+    "7632.87"
+   ],
+   "expect": "To hold the swing to 288544.98 mA at 7632.87 kHz stepping 81.71 V down to 37.25 V, the inductor comes to 0.01 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "64.18",
+    "7.05",
+    "556029.59",
+    "3038.8"
+   ],
+   "expect": "To hold the swing to 556029.59 mA at 3038.8 kHz stepping 64.18 V down to 7.05 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "63.71",
+    "40.54",
+    "478913.12",
+    "3222.07"
+   ],
+   "expect": "To hold the swing to 478913.12 mA at 3222.07 kHz stepping 63.71 V down to 40.54 V, the inductor comes to 0.01 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "55.02",
+    "21.76",
+    "716884.48",
+    "8937.55"
+   ],
+   "expect": "To hold the swing to 716884.48 mA at 8937.55 kHz stepping 55.02 V down to 21.76 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "54.4",
+    "16.39",
+    "297445.46",
+    "2217.36"
+   ],
+   "expect": "To hold the swing to 297445.46 mA at 2217.36 kHz stepping 54.4 V down to 16.39 V, the inductor comes to 0.02 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "28.41",
+    "13.87",
+    "535237.52",
+    "6962.1"
+   ],
+   "expect": "To hold the swing to 535237.52 mA at 6962.1 kHz stepping 28.41 V down to 13.87 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "94.02",
+    "19.49",
+    "697924.78",
+    "4151.87"
+   ],
+   "expect": "To hold the swing to 697924.78 mA at 4151.87 kHz stepping 94.02 V down to 19.49 V, the inductor comes to 0.01 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "77.47",
+    "77.34",
+    "719650.59",
+    "2065.91"
+   ],
+   "expect": "To hold the swing to 719650.59 mA at 2065.91 kHz stepping 77.47 V down to 77.34 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "22.68",
+    "20.95",
+    "202079.88",
+    "7459.51"
+   ],
+   "expect": "To hold the swing to 202079.88 mA at 7459.51 kHz stepping 22.68 V down to 20.95 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "30.27",
+    "15.75",
+    "589282.62",
+    "5045.59"
+   ],
+   "expect": "To hold the swing to 589282.62 mA at 5045.59 kHz stepping 30.27 V down to 15.75 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "60.71",
+    "48.45",
+    "515540.3",
+    "3970.27"
+   ],
+   "expect": "To hold the swing to 515540.3 mA at 3970.27 kHz stepping 60.71 V down to 48.45 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "24.27",
+    "11.65",
+    "191553.95",
+    "7181.86"
+   ],
+   "expect": "To hold the swing to 191553.95 mA at 7181.86 kHz stepping 24.27 V down to 11.65 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "82.52",
+    "39.64",
+    "811332.43",
+    "7601.6"
+   ],
+   "expect": "To hold the swing to 811332.43 mA at 7601.6 kHz stepping 82.52 V down to 39.64 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "24.92",
+    "2.8",
+    "640185.2",
+    "6645.32"
+   ],
+   "expect": "To hold the swing to 640185.2 mA at 6645.32 kHz stepping 24.92 V down to 2.8 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "57.88",
+    "4.47",
+    "295826.87",
+    "3376.02"
+   ],
+   "expect": "To hold the swing to 295826.87 mA at 3376.02 kHz stepping 57.88 V down to 4.47 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "61.42",
+    "59.09",
+    "301461.24",
+    "6756.18"
+   ],
+   "expect": "To hold the swing to 301461.24 mA at 6756.18 kHz stepping 61.42 V down to 59.09 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "11.2",
+    "1.86",
+    "177147.85",
+    "5784.4"
+   ],
+   "expect": "To hold the swing to 177147.85 mA at 5784.4 kHz stepping 11.2 V down to 1.86 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "4.82",
+    "3.92",
+    "22879.23",
+    "7995.12"
+   ],
+   "expect": "To hold the swing to 22879.23 mA at 7995.12 kHz stepping 4.82 V down to 3.92 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "17.02",
+    "15.47",
+    "301860.99",
+    "4980.11"
+   ],
+   "expect": "To hold the swing to 301860.99 mA at 4980.11 kHz stepping 17.02 V down to 15.47 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "78.67",
+    "3.92",
+    "562556.84",
+    "4364.87"
+   ],
+   "expect": "To hold the swing to 562556.84 mA at 4364.87 kHz stepping 78.67 V down to 3.92 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "78.45",
+    "1.31",
+    "929546.54",
+    "8768.76"
+   ],
+   "expect": "To hold the swing to 929546.54 mA at 8768.76 kHz stepping 78.45 V down to 1.31 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "60.72",
+    "29.28",
+    "145817.46",
+    "6607.38"
+   ],
+   "expect": "To hold the swing to 145817.46 mA at 6607.38 kHz stepping 60.72 V down to 29.28 V, the inductor comes to 0.02 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "35.11",
+    "31.2",
+    "2187.95",
+    "4076.86"
+   ],
+   "expect": "To hold the swing to 2187.95 mA at 4076.86 kHz stepping 35.11 V down to 31.2 V, the inductor comes to 0.39 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "71.03",
+    "34.7",
+    "93655.99",
+    "2040.97"
+   ],
+   "expect": "To hold the swing to 93655.99 mA at 2040.97 kHz stepping 71.03 V down to 34.7 V, the inductor comes to 0.09 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "22.79",
+    "13.27",
+    "666547.77",
+    "2310.65"
+   ],
+   "expect": "To hold the swing to 666547.77 mA at 2310.65 kHz stepping 22.79 V down to 13.27 V, the inductor comes to 0 µH."
+  },
+  {
+   "fn": "inductor",
+   "args": [
+    "34.73",
+    "16.35",
+    "544848.79",
+    "4957.21"
+   ],
+   "expect": "To hold the swing to 544848.79 mA at 4957.21 kHz stepping 34.73 V down to 16.35 V, the inductor comes to 0 µH."
+  }
+ ],
+ "errors": [
+  [
+   "duty",
+   [
+    "5",
+    "5",
+    "100"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "5",
+    "12",
+    "100"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "0",
+    "5",
+    "100"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "12",
+    "5",
+    "0"
+   ]
+  ],
+  [
+   "duty",
+   [
+    "12",
+    "5",
+    "10000.01"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "12",
+    "10",
+    "100"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "5",
+    "0",
+    "100"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "5",
+    "100000.01",
+    "100"
+   ]
+  ],
+  [
+   "ripple",
+   [
+    "12",
+    "5",
+    "10",
+    "0"
+   ]
+  ],
+  [
+   "inductor",
+   [
+    "12",
+    "5",
+    "0",
+    "100"
+   ]
+  ],
+  [
+   "inductor",
+   [
+    "12",
+    "5",
+    "1000000.01",
+    "100"
+   ]
+  ],
+  [
+   "inductor",
+   [
+    "12",
+    "12",
+    "3000",
+    "100"
+   ]
+  ]
+ ]
+}
